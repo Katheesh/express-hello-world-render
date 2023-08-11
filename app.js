@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
+var IPaddrs;
+
 app.get("/", (req, res) => {
-  var IPaddrs = req.ip;
+  IPaddrs = req.ip;
   res.type('html').send(html)
 });
 
